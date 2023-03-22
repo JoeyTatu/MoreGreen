@@ -36,6 +36,7 @@ Setup:
   
 10. Edit the file to this:<br>
   <code>cd MoreGreen
+        git pull
         echo `date +"%A %d %B %Y %H:%M:%S %Z"` >> dates.log
         git add *
         git commit -m "`date +'%A %d %B %Y %H:%M:%S %Z'`"

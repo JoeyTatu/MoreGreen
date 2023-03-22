@@ -54,7 +54,7 @@ Setup:
   
 13. Add this line to the end:<br>
   <code>*/30 * * * * ./gitupdate.sh</code>
-  This runs the file every 30 minutes. Crontab variables can be generated [here](https://crontab.guru/).
+  This runs the bash file every 30 minutes. Crontab variables can be generated [here](https://crontab.guru/).
   
 14. Save the file and exit the editor:<br>
   CTRL + O, CTRL + X.

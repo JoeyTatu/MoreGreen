@@ -1,8 +1,7 @@
 #MoreGreen
-Look like you're active on GitHub and make it more green by automating editing and pushing a file to a repo by running a bash script using Cron.   
-This is a repo that adds the current date and time to the dates.log via a cron job on an AWS Ubuntu server.
-
-The AWS Ubuntu instance user is "root". You can find out how to access the AWS Ubuntu instance as the root user by clicking [here](https://tecadmin.net/how-to-enable-ssh-as-root-on-aws-ubuntu-instance/).
+* Look like you're active on GitHub and make it more green by automating editing and pushing a file to a repo by running a bash script using Cron.   
+* This is a repo that adds the current date and time to the dates.log via a cron job on an AWS Ubuntu server.
+* The AWS Ubuntu instance user is "root". You can find out how to access the AWS Ubuntu instance as the root user by clicking [here](https://tecadmin.net/how-to-enable-ssh-as-root-on-aws-ubuntu-instance/).
 
 Setup:
 1. Create the MoreGreen repo on GitHub.

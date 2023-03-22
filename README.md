@@ -39,7 +39,7 @@ Setup:
         git pull
         echo </code>\`<code>date +"%A %d %B %Y %H:%M:%S %Z"</code>\`<code> >> dates.log
         git add *
-        git commit -m "</code>\`</code>date +'%A %d %B %Y %H:%M:%S %Z'</code>\`<code>"
+        git commit -m "</code>\`<code>date +'%A %d %B %Y %H:%M:%S %Z'</code>\`<code>"
         git push -u origin main</code><br><br>
   The text after <code>date</code> is formatting. If you want to format your date and time differently, check out [this link](https://phoenixnap.com/kb/linux-date-command).<br>
   %Z is the time zone.

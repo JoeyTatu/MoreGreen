@@ -41,7 +41,6 @@ Setup:
         git commit -m "`date +'%A %d %B %Y %H:%M:%S %Z'`"
         git push -u origin main
   </code>
-  
   The text after <code>date</code> is formatting. If you want to format your date and time differently, check out [this link](https://phoenixnap.com/kb/linux-date-command).<br>
   %Z is the time zone.
   

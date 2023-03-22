@@ -7,8 +7,8 @@ Setup:
 1. Create the MoreGreen repo on GitHub.
 
 2. Still in GitHub, get an access token:<br>
-  a. Click Pic on top right > Settings > Developer settings (bottom left) > Personal access token > Token (classic) > Generate new token > Generate new token (classic)
-  or
+  a. Click Pic on top right > Settings > Developer settings (bottom left) > Personal access token > Token (classic) > Generate new token > Generate new token (classic)<br>
+  or<br>
   b. Go here: (https://github.com/settings/tokens/new)[https://github.com/settings/tokens/new]
   
 3. In the AWS Ubuntu instance, clone the repo:<br>

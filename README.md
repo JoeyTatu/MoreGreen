@@ -34,16 +34,14 @@ Setup:
 9. Nano was used to edit files, but other text editors can be used:<br>
   <code> nano gitupdate.sh</code>
   
-10.
-  a. Edit the file to this:<br>
+10. a. Edit the file to this:<br>
     <code>cd MoreGreen
           git pull
           echo </code>\`<code>date +"%A %d %B %Y %H:%M:%S %Z"</code>\`<code> >> dates.log
           git add *
           git commit -m "</code>\`<code>date +'%A %d %B %Y %H:%M:%S %Z'</code>\`<code>"
           git push -u origin main</code><br><br>
-        
-  b. Ensure date is enclosed in backticks, like this: \`date\` or \`date +"%D"\`)<br>
+    b. Ensure date is enclosed in backticks, like this: \`date\` or \`date +"%D"\`)<br>
      The text after <code>date</code> is formatting. If you want to format your date and time differently, check out [this link](https://phoenixnap.com/kb/linux-date-command).<br>
      %Z is the time zone.
   

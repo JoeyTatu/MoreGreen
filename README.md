@@ -35,8 +35,9 @@ Setup:
   <code> nano gitupdate.sh</code>
   
 10. a. Edit the file to the below. This also checks if dates.log exists.:<br>
-    <code>#!/bin/bash
-
+    <code>
+          #!/bin/bash
+  
           FILE="dates.log"
           
           cd MoreGreen
@@ -51,22 +52,23 @@ Setup:
           echo "$(date +'%A %d %B %Y %H:%M:%S %Z')" >> "$FILE"
           git add .
           git commit -m "$(date +'%A %d %B %Y %H:%M:%S %Z')"
-          git push -u origin main</code><br><br>
+          git push -u origin main
+    </code><br><br>
     b. Ensure date is enclosed in backticks, like this: \`date\` or \`date +"%D"\`)<br>
         The text after <code>date</code> is formatting. If you want to format your date and time differently, check out [this link](https://phoenixnap.com/kb/linux-date-command).<br>
         %Z is the time zone.
   
-11. Save the file and exit the editor:<br>
+12. Save the file and exit the editor:<br>
   CTRL + O, CTRL + X.
   
-12. Begin crontab editing:<br>
+13. Begin crontab editing:<br>
   <code>crontab -e</code>
   
-13. Add this line to the end:<br>
+14. Add this line to the end:<br>
   <code>*/30 * * * * ./gitupdate.sh</code>
   This runs the bash file every 30 minutes. Crontab variables can be generated [here](https://crontab.guru/).
   
-14. Save the file and exit the editor:<br>
+15. Save the file and exit the editor:<br>
   CTRL + O, CTRL + X.
   
-15. If all done right, it will update every 30 minutes and add the current date to the dates.log file. 
+16. If all done right, it will update every 30 minutes and add the current date to the dates.log file. 

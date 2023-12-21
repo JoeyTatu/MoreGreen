@@ -37,22 +37,22 @@ Setup:
 10. a. Edit the file to the below. This also checks if dates.log exists.:
     <code>
           #!/bin/bash
-  
-          FILE="dates.log"
+
+        FILE="dates.log"
           
-          cd MoreGreen
+        cd MoreGreen
+
+        # Check if the file exists
+        if [ ! -e "$FILE" ]; then
+            # If it doesn't exist, create it
+            touch "$FILE"
+        fi
           
-          # Check if the file exists
-          if [ ! -e "$FILE" ]; then
-              # If it doesn't exist, create it
-              touch "$FILE"
-          fi
-          
-          git pull
-          echo "$(date +'%A %d %B %Y %H:%M:%S %Z')" >> "$FILE"
-          git add .
-          git commit -m "$(date +'%A %d %B %Y %H:%M:%S %Z')"
-          git push -u origin main
+        git pull
+        echo "$(date +'%A %d %B %Y %H:%M:%S %Z')" >> "$FILE"
+        git add .
+        git commit -m "$(date +'%A %d %B %Y %H:%M:%S %Z')"
+        git push -u origin main
     </code>
     <br><br>
     b. Ensure date is enclosed in backticks, like this: \`date\` or \`date +"%D"\`)<br>

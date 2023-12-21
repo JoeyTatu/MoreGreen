@@ -15,4 +15,3 @@ echo "$(date +'%A %d %B %Y %H:%M:%S %Z')" >> "$FILE"
 git add .
 git commit -m "$(date +'%A %d %B %Y %H:%M:%S %Z')"
 git push -u origin main
-

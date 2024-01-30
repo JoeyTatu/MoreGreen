@@ -72,4 +72,4 @@ Setup:
 15. Save the file and exit the editor:<br>
   CTRL + O, CTRL + X.
   
-16. If all done right, it will update every 30 minutes and add the current date to the dates.log file. 
+16. If all done right, it will update every 15 minutes and add the current date to the dates.log file. 

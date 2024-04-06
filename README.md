@@ -72,7 +72,6 @@ Setup:
 15. Save the file and exit the editor:<br>
   CTRL + O, CTRL + X.
   
-16. Finally, ensure the gitupdate.sh file is readable by running:
-    <code>chmod 777 gitupdate.sh</code>
+16. Finally, ensure the gitupdate.sh file is readable by running:<br><code>chmod 777 gitupdate.sh</code>
 
 17. If all done right, it will update every 15 minutes and add the current date to the dates.log file.
